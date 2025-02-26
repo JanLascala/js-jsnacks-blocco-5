@@ -19,5 +19,30 @@ const students = [
   },
 ];
 
+for (let i = 0; i < students.length; i++) {
+  const thisStudent = students[i]
+  if (students.class === "3C") {
+    console.log(thisStudent)
+  }
+}
+
+
+function class3C(clas) {
+  return clas.class === `3C`
+}
+
+const marioLanciclass = students.find(class3C)
+console.log(marioLanciclass)
+
+
+let id = 2;
+
+let prop = "classe";
+
+let res = students.find(item => item.id === id);
+if (res) console.log(res[prop]);
+
+
+
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
