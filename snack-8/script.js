@@ -42,6 +42,17 @@ let prop = "classe";
 let res = students.find(item => item.id === id);
 if (res) console.log(res[prop]);
 
+function getPropertyValue(objectID) {
+  for (const obj of students) {
+    if (obj.id == objectID) {
+      return obj.class;
+    } else {
+      continue;
+    }
+  }
+  return null;
+}
+console.log(getPropertyValue(1));
 
 
 // Recupera la classe dello studente 'Marco Lanci'
